@@ -1,0 +1,103 @@
+/* Block Form */
+.form {
+    border: 1px solid #000000;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form .form-body {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.form .form-body .form-body__group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form .form-body .form-body__group .form-body__group-label {
+    position: relative;
+    font-weight: bold;
+}
+
+.form .form-body .form-body__group .form-body__group-label-required {
+    position: relative;
+}
+
+.form .form-body .form-body__group .form-body__group-label-required:before {
+    content: "*";
+}
+
+.form .form-body .form-body__group .form-body__group-input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.form .form-body .form-body__group .form-body__group-error {
+    position: relative;
+    display: none;
+    color: #ff0000;
+}
+
+.form .form-body .form-body__group-invalid .form-body__group-input{
+    border: 1px solid #ff0000;
+}
+
+.form .form-body .form-body__group-invalid .form-body__group-error {
+    display: block;
+}
+
+@media (max-width: 639px) {
+    .form .form-body {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .form .form-body .form-body__group {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 640px) {
+    .form .form-body {
+        display: flex;
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-left: -4%;
+        margin-right: -4%;
+    }
+    .form .form-body .form-body__group {
+        flex-basis: 44%;
+        margin-left: 4%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .form .form-body {
+        display: flex;
+    }
+    .form .form-body .form-body__group {
+        flex-basis: 30%;
+        margin-left: 2%;
+    }
+    .form .form-body .form-body__group:last-child {
+        margin-right: 4%;
+    }
+}
+
+@media (min-width: 1599px) {
+    .form .form-body {
+        display: flex;
+    }
+    .form .form-body .form-body__group {
+        flex-basis: 480px;
+        flex-shrink: 0;
+        margin-left: 32px;
+    }
+}

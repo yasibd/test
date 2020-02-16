@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Main page</title>
+</head>
+<body>
+<div class="header">Header</div>
+<div class="wrapper">
+    <div class="sidebar">Sidebar</div>
+    <div class="page">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <iframe src="./block.html" width="100%" frameborder="0" scrolling="no" id="form" allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores culpa dolorem ducimus esse exercitationem harum ipsa ipsum libero, magnam nostrum quam, qui quod, saepe sunt tempora temporibus voluptas!</p>
+    </div>
+</div>
+<script>
+    window.addEventListener('message', function(e) {
+        var iframeForm = document.getElementById('form'),
+            eventName = e.data[0],
+            data = e.data[1];
+        if (eventName === 'formHeight') {
+            iframeForm.style.height = data + "px";
+        }
+    }, false);
+</script>
+</body>
+</html>

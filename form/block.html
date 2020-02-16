@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Form -->
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Block</title>
+</head>
+<body>
+<!-- Block form START -->
+<div class="form" id="form">
+    <div class="form-body">
+        <div class="form-body__group form-body__group-invalid">
+            <label class="form-body__group-label form-body__group-label-required">Фамилия</label>
+            <input type="text" class="form-body__group-input" required/>
+            <div class="form-body__group-error">Обязательное поле</div>
+        </div>
+        <div class="form-body__group form-body__group-invalid">
+            <label class="form-body__group-label form-body__group-label-required">Имя</label>
+            <input type="text" class="form-body__group-input" required/>
+            <div class="form-body__group-error">Обязательное поле</div>
+        </div>
+        <div class="form-body__group">
+            <label class="form-body__group-label">Отчество</label>
+            <input type="text" class="form-body__group-input" />
+            <div class="form-body__group-error">Обязательное поле</div>
+        </div>
+    </div>
+</div>
+<!-- Block form END -->
+<script>
+    function resize() {
+        var height = document.getElementById("form").offsetHeight;
+        window.parent.postMessage(["formHeight", height], "*");
+    }
+    window.addEventListener('resize', resize);
+    document.addEventListener("DOMContentLoaded", resize)
+</script>
+</body>
+</html>
